@@ -1,0 +1,101 @@
+.dashboard {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+}
+
+.category {
+  background-color: #f7f7f7;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px;
+  width: 300px;
+}
+
+.category h3 {
+  margin-top: 0;
+}
+
+.widget {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.widget h4 {
+  margin-top: 0;
+}
+
+.widget button {
+  float: right;
+  margin-top: -10px;
+  margin-right: -10px;
+  background-color: #fff;
+  border: none;
+  padding: 5px 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.widget button:hover {
+  background-color: #ccc;
+}
+
+.add-widget-form {
+  margin-top: 20px;
+}
+
+.add-widget-form input[type='text'] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+}
+
+.add-widget-form button[type='submit'] {
+  background-color: #4caf50;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.add-widget-form button[type='submit']:hover {
+  background-color: #3e8e41;
+}
+
+.search-input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+}
+
+/* Responsive styles */
+
+@media (max-width: 768px) {
+  .category {
+    width: 100%;
+    margin: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .category {
+    padding: 10px;
+  }
+  .widget {
+    padding: 5px;
+  }
+  .add-widget-form input[type='text'] {
+    padding: 5px;
+  }
+  .add-widget-form button[type='submit'] {
+    padding: 5px 10px;
+  }
+}
